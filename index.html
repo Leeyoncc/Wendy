@@ -28,17 +28,16 @@
 			background-color: #fff;
 			border-radius: 10px;
 			box-shadow: 0 2px 10px rgba(0,0,0,.1);
-			transition: all .3s ease-in-out;
 			cursor: pointer;
+			overflow: hidden;
 		}
-		.card:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 5px 15px rgba(0,0,0,.2);
+		.card:hover img {
+			transform: scale(1.05);
 		}
 		.card img {
 			width: 100%;
 			height: auto;
-			border-radius: 10px 10px 0 0;
+			transition: transform .3s ease-in-out;
 		}
 		.card h2 {
 			font-size: 1.2em;
@@ -46,10 +45,33 @@
 			margin: 10px 0;
 			color: #f08080; /* 粉红色标题 */
 		}
-		.card p {
-			font-size: 1em;
-			margin: 10px;
-			text-align: justify;
+		.modal {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .5);
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+		.modal-content {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,.1);
+			padding: 20px;
+			max-width: 90%;
+			max-height: 90%;
+			overflow: auto;
+			text-align: center;
+			position: relative;
+		}
+		.close-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
 		}
 	</style>
 </head>
@@ -59,22 +81,53 @@
 	</header>
 	<main>
 		<div class="container">
-			<div class="card">
+			<div class="card" data-modal="#modal-1">
 				<img src="https://th.bing.com/th/id/R.997519279607967913bbf3747c844cbe?rik=%2fpCwvvYy3jfmXg&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f13%2f9313.jpg&ehk=9Uo6pHJynbTAoeHTmYJ89LHW2kru29DaJKem17GecGg%3d&risl=&pid=ImgRaw&r=0" alt="图片1">
 				<h2>粉色花朵</h2>
-				<p>这是一个粉色花朵的图片。非常可爱！</p>
 			</div>
-			<div class="card">
+			<div class="card" data-modal="#modal-2">
 				<img src="https://img.zcool.cn/community/01bc1c5cee2ac4a80121a47047af74.jpg@2o.jpg" alt="图片2">
 				<h2>小兔子</h2>
-				<p>这是一只小兔子。它非常可爱，你不觉得吗？</p>
 			</div>
-			<div class="card">
-				<img src="https://th.bing.com/th/id/R.91389f42af40a3946f398f6b4f41265d?rik=bNbyN%2fYzebcaJQ&riu=http%3a%2f%2fimg.mp.itc.cn%2fupload%2f20170325%2fc7fdfcca05514102b9746b121a2bd37a_th.jpg&ehk=0co%2f%2fu9YzYJ7bjNyj54LFIqyH7QM9fu75cXDBBiDLoo%3d&risl=&pid=ImgRaw&r=0" alt="图片3">
+			<div class="card" data-modal="#modal-3">
+				<img src="https://th.bing.com/th/id/R.91389f42af40a3946f398f6b4f41265d?rik=bNbyN%2fYzebcaJQ&riu=http%3a%2f%2fimg.mp.it	upload%2f20170325%2fc7fdfcca05514102b9746b121a2bd37a_th.jpg&ehk=0co%2f%2fu9YzYJ7bjNyj54LFIqyH7QM9fu75cXDBBiDLoo%3d&risl=&pid=ImgRaw&r=0" alt="图片3">
 				<h2>彩虹糖果</h2>
-				<p>这些糖果看起来非常好吃，是不是很想尝一口呢？</p>
 			</div>
 		</div>
 	</main>
+	<div class="modal" id="modal-1">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<img src="https://th.bing.com/th/id/R.997519279607967913bbf3747c844cbe?rik=%2fpCwvvYy3jfmXg&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f13%2f9313.jpg&ehk=9Uo6pHJynbTAoeHTmYJ89LHW2kru29DaJKem17GecGg%3d&risl=&pid=ImgRaw&r=0" alt="粉色花朵">
+			<p>这是一个粉色花朵的图片。非常可爱！</p>
+		</div>
+	</div>
+	<div class="modal" id="modal-2">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<img src="https://img.zcool.cn/community/01bc1c5cee2ac4a80121a47047af74.jpg" alt="小兔子">
+			<p>这是一只小兔子。它非常可爱，你不觉得吗？</p>
+		</div>
+	</div>
+	<div class="modal" id="modal-3">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<img src="https://th.bing.com/th/id/R.91389f42af40a3946f398f6b4f41265d?rik=bNbyN%2fYzebcaJQ&riu=http%3a%2f%2fimg.mp.itc.cn%2fupload%2f20170325%2fc7fdfcca05514102b9746b121a2bd37a_th.jpg&ehk=0co%2f%2fu9YzYJ7bjNyj54LFIqyH7QM9fu75cXDBBiDLoo%3d&risl=&pid=ImgRaw&r=0" alt="彩虹糖果">
+			<p>这些糖果看起来非常好吃，是不是很想尝一口呢？</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var modalBtns = document.querySelectorAll('.card');
+		modalBtns.forEach(function(btn) {
+			btn.addEventListener('click', function() {
+				var modal = document.querySelector(btn.dataset.modal);
+				modal.style.display = 'block';
+				var closeBtn = modal.querySelector('.close-btn');
+				closeBtn.addEventListener('click', function() {
+					modal.style.display = 'none';
+				});
+			});
+		});
+	</script>
 </body>
 </html>
