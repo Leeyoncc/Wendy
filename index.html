@@ -1,125 +1,80 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=7">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>µçÄÔÖªÊ¶Ñ§Ï°</title>
-<meta name="keywords" content="µçÄÔÖªÊ¶Ñ§Ï°" />
-<meta name="description" content="µçÄÔÖªÊ¶Ñ§Ï°²©¿Í" />
-<link rel="shortcut icon" href="favicon.ico" >
-<link href="/css/ElegantBlue/style.css" rel="stylesheet" type="text/css" media="screen" />
-<script  language="javascript" src="/js/slidealbum.js"></script>
+	<title>å°é›¯é›¯çš„ä¸ªäººä¸»é¡µ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body {
+			background-color: #fce5cd; /* æ·¡ç²‰è‰²èƒŒæ™¯ */
+			font-family: "Microsoft YaHei", sans-serif;
+			color: #666;
+		}
+		h1 {
+			font-size: 2.5em;
+			text-align: center;
+			margin-top: 30px;
+			color: #f08080; /* ç²‰çº¢è‰²æ ‡é¢˜ */
+		}
+		.container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+			padding: 40px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.card {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 10px rgba(0,0,0,.1);
+			transition: all .3s ease-in-out;
+			cursor: pointer;
+		}
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 15px rgba(0,0,0,.2);
+		}
+		.card img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px 10px 0 0;
+		}
+		.card h2 {
+			font-size: 1.2em;
+			text-align: center;
+			margin: 10px 0;
+			color: #f08080; /* ç²‰çº¢è‰²æ ‡é¢˜ */
+		}
+		.card p {
+			font-size: 1em;
+			margin: 10px;
+			text-align: justify;
+		}
+	</style>
 </head>
 <body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-		<h1><a href="/" title="µçÄÔÖªÊ¶Ñ§Ï°¡ª¼ÆËã»ú»ù´¡ÖªÊ¶²©¿Í">µçÄÔÖªÊ¶Ñ§Ï°¡ª¼ÆËã»ú»ù´¡ÖªÊ¶²©¿Í</a></h1>		
-		<p class="slogan">ÈÃ½¨Õ¾±äµÃ¸ü¼Ó¼òµ¥£¬Äã¿ÉÒÔµÄ</p>	
+	<header>
+		<h1>å°é›¯é›¯çš„ä¸ªäººä¸»é¡µ</h1>
+	</header>
+	<main>
+		<div class="container">
+			<div class="card">
+				<img src="https://th.bing.com/th/id/R.997519279607967913bbf3747c844cbe?rik=%2fpCwvvYy3jfmXg&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f13%2f9313.jpg&ehk=9Uo6pHJynbTAoeHTmYJ89LHW2kru29DaJKem17GecGg%3d&risl=&pid=ImgRaw&r=0" alt="å›¾ç‰‡1">
+				<h2>ç²‰è‰²èŠ±æœµ</h2>
+				<p>è¿™æ˜¯ä¸€ä¸ªç²‰è‰²èŠ±æœµçš„å›¾ç‰‡ã€‚éžå¸¸å¯çˆ±ï¼</p>
+			</div>
+			<div class="card">
+				<img src="https://img.zcool.cn/community/01bc1c5cee2ac4a80121a47047af74.jpg@2o.jpg" alt="å›¾ç‰‡2">
+				<h2>å°å…”å­</h2>
+				<p>è¿™æ˜¯ä¸€åªå°å…”å­ã€‚å®ƒéžå¸¸å¯çˆ±ï¼Œä½ ä¸è§‰å¾—å—ï¼Ÿ</p>
+			</div>
+			<div class="card">
+				<img src="https://th.bing.com/th/id/R.91389f42af40a3946f398f6b4f41265d?rik=bNbyN%2fYzebcaJQ&riu=http%3a%2f%2fimg.mp.itc.cn%2fupload%2f20170325%2fc7fdfcca05514102b9746b121a2bd37a_th.jpg&ehk=0co%2f%2fu9YzYJ7bjNyj54LFIqyH7QM9fu75cXDBBiDLoo%3d&risl=&pid=ImgRaw&r=0" alt="å›¾ç‰‡3">
+				<h2>å½©è™¹ç³–æžœ</h2>
+				<p>è¿™äº›ç³–æžœçœ‹èµ·æ¥éžå¸¸å¥½åƒï¼Œæ˜¯ä¸æ˜¯å¾ˆæƒ³å°ä¸€å£å‘¢ï¼Ÿ</p>
 			</div>
 		</div>
-	</div>
-	<!-- end #header -->
-	<div id="menu-wrapper">
-		<div id="menu">
-<ul><li class='current_page_item'><a href='/' >Ê× Ò³</a></li> <li><a href='/blog/' >²© ¿Í</a></li> <li><a href='/album/' >Ïà ²á</a></li> <li><a href='/Category/About' >¹Ø ÓÚ</a></li> <li><a href='/FeedBack/' >Áô ÑÔ</a></li> <li><a href='/Category/Contact' >Áª Ïµ</a></li> <li><a href='http://www.66diannao.com/' target='_blank'>¹Ù·½ÍøÕ¾</a></li> </ul>	
-                </div>
-	</div>
-	<!-- end #menu -->
-	<div id="page">
-		<div id="page-bgtop">
-			<div id="page-bgbtm">
-				<div id="page-content">
-					<div id="content">
-<div class="Web_Date"><script  language="javascript" src="/js/date.js"></script></div>
-		<div class="clearfix"></div>		
-<div class='post'><h2 class='title'><span style='color:#ff0000'>[ÖÃ¶¥]</span> <a href='/html/0651825813.html' target='_blank'>ÈÕ±¾½«¿ª·¢³¬¼¶ÃÔÄã³µ Ö»¹©Ò»µ½Á½ÈË³Ë×ø</a></h2><p class='meta'>2012/5/29 11:58:13&nbsp;&nbsp;Posted by admin</p><div class='entry'><p>¾Ý¡¶ÁªºÏÔç±¨¡·5ÔÂ28ÈÕ±¨µÀ£¬Ëæ×ÅÈÕ±¾Éç»áµÄÀÏÁä»¯Ç÷ÊÆºÍÈËÃÇÏû·ÑÏ°¹ßµÄ±ä»¯£¬ÈÕ±¾³µÉÌ¸úËæ¸ÃÇ÷ÊÆ£¬ÅäºÏ×ÅÀÏÄêÈË¼ÒÍ¥µÄÌõ¼þºÍÐèÒª£¬¾ö¶¨Éè¼ÆºÍÖÆÔì ¡°³¬¼¶ÃÔÄã¡±½Î³µ¡£¾Ý±¨µÀ£¬ÈÕ²úµÈÆû³µ³§ÉÌ¿ª·¢µÄÃÔÄã½Î³µÖ»¹©Ò»µ½Á½ÈË³Ë×ø£¬ËüÃÇ²»µ¥Ìå»ýÐ¡£¬»¹Ê®·Ö½²¾¿»·±£¡£ÈÕ±¾³µÉÌÈÏÎª£¬Ëü¿É¼Ì½ÅÌ¤³µÖ®ºó£¬³ÉÎªÈÕ±¾Éç»áÁíÒ»¸öÈÈÃÅ´ú²½¹¤¾ß¡£
- 
-
-ÈÕ²úµÄ³¬¼¶ÃÔÄãÐÍÆû³µ
-ÈÕ±¾½»Í¨µ±¾ÖÒÑ¾­¾ö¶¨£¬ÐÞ¸ÄÆû³µ¿îÊ½×¼Ö¤£¬ÄâÔÚÆÕÍ¨Æû³µ(1000ccÒÔÉÏ)ÒÔ¼°ÇáÁ¿¼¶(500ccµ½1000cc)Ö®Íâ£¬Ôö¼ÓÅÅÆøÁ¿ÔÚ125ccµÄÃÔÄã½Î³µ¡£ÈÕ±¾ÏÖÐÐÆû³µÌõÀýÔÚ1963ÄêÖÆ¶¨£¬ÕâÊÇ½«½ü50ÄêÀ´µÄÊ×´Î±ä¶¯¡£
-ÈÕ±¾µ±¾Ö×î´óµÄ¿¼Á¿ÊÇÎªÁËÓ­ºÏÀÏÁä»¯Éç...</p><p class='links'><a href='/Category/Favorite/'>[¸öÈËÊÕ²Ø]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/0651825813.html' target='_blank'>²é¿´È«ÎÄ(12)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/0651825813.html#comment' target='_blank'>·¢±íÆÀÂÛ(2)</a></p></div></div><div class='post'><h2 class='title'><a href='/html/2875165721.html' target='_blank'>´«Í³¿ìµÝºôÓõÐÐÒµ½ûÖ¹µçÉÌÉæ×ã¿ìµÝÒµ</a></h2><p class='meta'>2012/5/29 11:57:21&nbsp;&nbsp;Posted by admin</p><div class='ArticleTags'>Tags£º<a href='/query/index.asp?q=¿ìµÝ' target='_blank' title='¿ìµÝ'>¿ìµÝ</a> </div><div class='entry'><p>5ÔÂ29ÈÕÏûÏ¢£¬µçÉÌÓë¿ìµÝµÄÒµÎñÈÚºÏÕýÔÚ¼Ó¾ç£¬µ«Ëæ×ÅÒ²½«´øÀ´ÊÐ³¡µÄ»ìÂÒ£¬²úÒµµÄ±ß½çÎÊÌâ¼±ÐèµÃµ½½â¾ö¡£5ÔÂ28ÈÕ£¬Ô²Í¨ËÙµÝ×Ü²ÃÓ÷Î¼òÔ¶ÔÃ½ÌåºôÓõ£¬¹ú¼ÒÓÊÕþ¾ÖºÍ¿ìµÝÐÐÒµÐ­»áÓ¦ÖÆÖ¹»òÐ­µ÷µçÉÌ¡¢¿ìµÝË«·½µÄ¿ç½çÐÐÎª£¬ÒÔ±ÜÃâÖÐ¹ú¿ìµÝºÍµç×ÓÉÌÎñÊÐ³¡µÄ»ìÂÒ¡£Ä¿Ç°£¬¾©¶«ÉÌ³Ç¡¢·²¿Í¡¢1ºÅµê¡¢ÑÇÂíÑ·ÖÐ¹úµÈ¹úÄÚµçÉÌ£¬¾ùÓÐ×Ô¼ºµÄÎïÁ÷ÅäËÍÍÅ¶Ó¡£
-ÆäÖÐ£¬¾©¶«ÉÌ³ÇÔÚÎïÁ÷ÅäËÍµÄÍ¶Èë½Ï´ó¡£¾©¶«ÉÌ³ÇCEOÁõÇ¿¶«Ôø±íÊ¾£¬¾©¶«ÉÌ³Ç½«ÔÚÎ´À´ÈýÄêÄÚÍ¶×Ê100ÒÚÔª×Ô½¨ÎïÁ÷¡£Ä¿Ç°£¬¾©¶«ÉÌ³ÇµÄ×Ô½¨ÎïÁ÷ÍÅ¶ÓÒÑ¸²¸ÇÈ«¹ú27¸ö³ÇÊÐ¡£×Ô½¨ÎïÁ÷ÏµÍ³ÒÑ³ÉÎª¾©¶«ÉÌ³ÇÔÚ¹úÄÚµçÉÌÐÐÒµ×î´óµÄ¾ºÕù±ÚÀÝÖ®Ò»¡£
-¾©¶«ÉÌ³Ç·½Ãæ±íÊ¾£¬¹úÄÚµç×ÓÉÌÎñ¹«Ë¾×Ô½¨ÎïÁ÷ÍÅ¶Ó£¬Ö÷ÒªÊÇ¹ú...</p><p class='links'><a href='/Category/Diary/'>[¸öÈËÈÕ¼Ç]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/2875165721.html' target='_blank'>²é¿´È«ÎÄ(4)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/2875165721.html#comment' target='_blank'>·¢±íÆÀÂÛ(0)</a></p></div></div><div class='post'><h2 class='title'><a href='/html/7043195512.html' target='_blank'>ËÉÏÂÐû²¼½«¶Ô×Ü¹«Ë¾7000ÃûÔ±¹¤½øÐÐ²ÃÔ±¼õ°ë</a></h2><p class='meta'>2012/5/29 11:55:12&nbsp;&nbsp;Posted by admin</p><div class='ArticleTags'>Tags£º<a href='/query/index.asp?q=ËÉÏÂ' target='_blank' title='ËÉÏÂ'>ËÉÏÂ</a> </div><div class='entry'><p>5ÔÂ29ÈÕÏûÏ¢£¬¾ÝÈÕ±¾Ã½Ìå±¨µÀ£¬ËÉÏÂ¼¯ÍÅ½ñÈÕ¶ÔÍâÐû²¼¹«Ë¾¼Æ»®½«ÓÚ2012²ÆÄê½«×Ü¹«Ë¾7000ÃûÔ±¹¤²ÃÔ±¼õ°ë£¬Ô¤¼Æ½«²ÃÔ±3000ÖÁ4000ÈË¡£
-¶ÔÓë´Ë´Î¶Ô×Ü¹«Ë¾½øÐÐ²ÃÔ±£¬ËÉÏÂÏÂÒ»ÈÎÉç³¤µÄ½òºØÒ»ºê±íÊ¾£¬ËÉÏÂÏ£Íû¶Ô×Ü¹«Ë¾ÌåÖÆ½øÐÐ¸Ä¸ïºó£¬ÒÔ´ïµ½2012²ÆÄêÓ¯Àû500ÒÚÈÕÔªµÄÄ¿±ê¡£ÁíÍâ£¬½ñºóËÉÏÂ¼¯ÍÅ¿ÉÄÜ½øÒ»²½Ï÷¼õ¹ÜÀí²ãÈËÔ±£¬Ò²²»ÅÅ³ý¶Ô²¿ÃÅ¸Ä±àµÄ¿ÉÄÜ¡£
-ËÉÏÂ¼¯ÍÅ±íÊ¾£¬µçÊÓ¡¢°ëµ¼ÌåÒµÎñÓëÈýÑóµç»úµÄ½á¹¹ÖØ×éµ÷ÕûÈÔÔÚ¼ÌÐø£¬¹«Ë¾´Ë´Î×ö³ö²ÃÔ±¾ö¶¨£¬Ï£ÍûÍ¨¹ýÒ»Á¬´®µÄÒµÎñ½á¹¹¸Ä¸ï£¬¹«Ë¾Òµ¼¨ÊµÏÖV×ÖÐÎ¸´ËÕ¡£
-ÒòÎªÈ«ÇòµçÊÓ»úÒµÎñµÄÎ®ËõÒÔ¼°ÊÜµ½Ë°ÎñÏà¹Ø·ÑÓÃµÄÍÏÀÛ£¬ËÉÏÂ2011²ÆÄê¿÷Ëð´ïµ½7720ÒÚÈÕÔª£¬´´ÔìÁËËÉÏÂ×Ô19...</p><p class='links'><a href='/Category/Internet/'>[»¥ÁªÍø]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/7043195512.html' target='_blank'>²é¿´È«ÎÄ(0)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/7043195512.html#comment' target='_blank'>·¢±íÆÀÂÛ(0)</a></p></div></div><div class='post'><h2 class='title'><a href='/html/943726544.html' target='_blank'>¹È¸èÆ»¹ûÎ¢ÈíÑÅ»¢Õù¶áÒÆ¶¯ä¯ÀÀÆ÷ÊÐ³¡Ö÷µ¼È¨</a></h2><p class='meta'>2012/5/29 11:54:04&nbsp;&nbsp;Posted by admin</p><div class='ArticleTags'>Tags£º<a href='/query/index.asp?q=¹È¸è' target='_blank' title='¹È¸è'>¹È¸è</a> <a href='/query/index.asp?q=Æ»¹û' target='_blank' title='Æ»¹û'>Æ»¹û</a> <a href='/query/index.asp?q=Î¢Èí' target='_blank' title='Î¢Èí'>Î¢Èí</a> <a href='/query/index.asp?q=ÑÅ»¢' target='_blank' title='ÑÅ»¢'>ÑÅ»¢</a> </div><div class='entry'><p>¹úÍâÃ½Ìå½ñÈÕ¿¯ÔØÎÄÕÂ³Æ£¬Ò»³¡Î§ÈÆ×ÅÒÆ¶¯»¥ÁªÍøä¯ÀÀÆ÷ÊÐ³¡Ö÷µ¼È¨¶øÕ¹¿ªµÄ¡°Õ½Õù¡±ÕýÔÚÉý¼¶£¬¹È¸è(Î¢²©)¡¢Æ»¹û¡¢Î¢ÈíºÍÑÅ»¢¶¼¾íÈëÁËÕâ³¡Õ½Õù¡£ÎÄÕÂÍ¬Ê±Ö¸³ö£¬ÎªÕÆ¿ØÕâÒ»ÊÐ³¡¶ø´òÏìµÄÕ½¶·»¹Òý·¢ÁËÓÐ¹ØFacebookµÄÎÊÌâ£¬Õâ¼Ò¹«Ë¾ÏÖÕýÌ½Ë÷Ò»ÏîÒÆ¶¯Õ½ÂÔ£¬¿ÉÄÜ½«ÊÕ¹ºÅ²Íþä¯ÀÀÆ÷¿ª·¢ÉÌOpera Software¡£
-ÒÔÏÂÊÇÕâÆªÎÄÕÂµÄÈ«ÎÄ£º
-ä¯ÀÀÆ÷¡°Õ½Õù¡±ÕýÔÚÔÙ´ÎÉýÎÂ£¬µ«ÕâÒ»´ÎµÄÕ½¶·ÊÇÎ§ÈÆ×ÅÒÆ¶¯»¥ÁªÍøä¯ÀÀÆ÷ÊÐ³¡µÄÖ÷µ¼È¨¶øÕ¹¿ªµÄ¡£
-¹È¸è¡¢Æ»¹û¡¢Î¢ÈíºÍÑÅ»¢¶¼¾íÈëÁËÕâ³¡¡°Õ½Õù¡±£¬Å²ÍþÈË¿ª·¢µÄOperaä¯ÀÀÆ÷ºÍMozillaµÄ¿ªÔ´»ðºüä¯ÀÀÆ÷Ò²Í¬ÑùÉæ×ãÆäÖÐ¡£
-Õâ³¡Õ½Õù±³ºóµÄ¶¯»ú²»½ö½öÊÇÎªÁËÕù¶á¿ä¿ÚµÄ×Ê¸ñ¡£ÕÆ¿Ø×ÅÒÆ¶¯»¥...</p><p class='links'><a href='/Category/Internet/'>[»¥ÁªÍø]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/943726544.html' target='_blank'>²é¿´È«ÎÄ(2)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/943726544.html#comment' target='_blank'>·¢±íÆÀÂÛ(0)</a></p></div></div><div class='post'><h2 class='title'><a href='/html/624185537.html' target='_blank'>Åµ»ùÑÇ¼Æ»®ÔÚÎ´À´ÊÖ»úÖÐ¼ÓÈë·ÀË®¹¦ÄÜ</a></h2><p class='meta'>2012/5/29 11:53:07&nbsp;&nbsp;Posted by admin</p><div class='ArticleTags'>Tags£º<a href='/query/index.asp?q=Åµ»ùÑÇ' target='_blank' title='Åµ»ùÑÇ'>Åµ»ùÑÇ</a> </div><div class='entry'><p>5ÔÂ29ÈÕÏûÏ¢£¬¸ù¾Ý¹úÍâÃ½Ìå±¨µÀ£¬Åµ»ùÑÇ¸ß²ã¹ÙÔ±ÈÕÇ°Í¸Â¶£¬¹«Ë¾¼Æ»®Ä£ÄâºÉÒ¶²»Õ´Ë®µÄÔ­Àí£¬ÔÚÎ´À´ÊÖ»úÉè±¸ÖÐ¼ÓÈë·ÀË®¹¦ÄÜ¡£
- 
-
-Åµ»ùÑÇÎ÷Å·¸±×Ü²ÃConor PierceÈÕÇ°±íÊ¾£º¡°ÈçºÎÄ£ÄâºÉÒ¶ÓöË®¶ø²»Õ´ÊªµÄÌØÐÔÒ»Ö±À§ÈÅ×ÅÊý´úµÄ¿ÆÑ§¼Ò¡­¡­µ«ÎÒÃÇÔÚÓ¢¹ú½£ÇÅµÄ¿ª·¢Ð¡×éÒÑ¾­ÕÒµ½ÁËÒ»ÖÖ½â¾ö·½°¸¡£
-ÄÇ±ãÊÇÄÉÃ×¼¼Êõ¡£³¬ÊèË®¼¼ÊõÄÜÈÃË®µÎ·´µ¯£¬Ë®±»×èÖ¹²¢»¬Âä£¬ÁôÏÂ·ÀË®½þ×Õ¼Á¡£Õâ¾ÍÊÇÉñÆæËùÔÚ£¬Ò²ÕýÊÇÎÒÃÇ½«ÔÚÎ´À´²úÆ·ÖÐËùÊ¹ÓÃµÄ¼¼Êõ¡£¡±
-²»Í¬ÓëÄ¿Ç°Ê¹ÓÃÍâ¿ÇÀ´×è¶ÏË®ÈëÇÖ»úÉíµÄ·ÀË®ÊÖ»ú£¬Åµ»ùÑÇ¼Æ»®Í¬Ê±ÔÚÉè±¸µÄÍâ²¿ºÍÄÚ²¿Ê¹ÓÃ³¬ÊèË®Í¿²ã£¬ÕâÑù¼´Ê¹Ë®½øÈë»úÉíÄÚ²¿£¬Ò²²»»á¶ÔÉè±¸Ôì³ÉÈÎºÎËðÉË¡£
-µ«ÊÇ£¬Pierce²¢Î´Í¸Â¶...</p><p class='links'><a href='/Category/Internet/'>[»¥ÁªÍø]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/624185537.html' target='_blank'>²é¿´È«ÎÄ(1)</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/html/624185537.html#comment' target='_blank'>·¢±íÆÀÂÛ(0)</a></p></div></div>	
-<div class="morearticle"><a href="/blog/">²é¿´¸ü¶àÎÄÕÂ>>></a></div>	
-			<div style="clear: both;">&nbsp;</div>
-		</div>
-					<!-- end #content -->
-					<div id="sidebar">
-			<ul>
-	<li>		<div id="search">
-			<form method="get" action="/query/index.asp">
-				<fieldset>
-				<input type="text" name="q" id="search-text" size="15" onBlur="if(this.value=='') this.value='Input Keywords ...';" 
-onfocus="if(this.value=='Input Keywords ...') this.value='';" value="Input Keywords ..." /><input type="submit" id="search-submit" value="ËÑ Ñ°" />
-				</fieldset>
-			</form>
-		</div>
-		<div class="clearfix"></div>
-	</li>		
-				<li>
-					<h2>¸öÈËµµ°¸</h2>
-					<p class="myphoto"><img src="/images/up_images/myphoto.jpg" width="80" height="89"></p>
-					<p class="myintro">µçÄÔÖªÊ¶<br>2013Äê05ÔÂ04ÈÕ<br>ÖÐ¹ú ÉÏº£<br>121673232@qq.com</p>
-					<p class="clearfix">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ÊôÓÚÎÒ×Ô¼ºµÄÒ»Æ¬ÌìµØ£¬ÎÒ¿ÉÒÔËæÒâ´òÔì¡£¡£¡£</a></p>
-					</li>
-				<li>
-					<h2>¾«²ÊÏà²á</h2>
-<!--slide album start-->
-<div id="slidebox">
-	<div id="slider">
-<div class='slide'><A href='/Gallery/64/' target='_blank' title='Ã÷ÐÇÍ¼Æ¬'><img class='diapo' src='/photos/20120529123831900.jpg' alt='Ã÷ÐÇÍ¼Æ¬' width='210' ></a><div class='text'><span class='title'>Ã÷ÐÇÍ¼Æ¬</span></div></div><div class='slide'><A href='/Gallery/64/' target='_blank' title='Ã÷ÐÇÍ¼Æ¬'><img class='diapo' src='/photos/20120529123831633.jpg' alt='Ã÷ÐÇÍ¼Æ¬' width='210' ></a><div class='text'><span class='title'>Ã÷ÐÇÍ¼Æ¬</span></div></div><div class='slide'><A href='/Gallery/64/' target='_blank' title='Ã÷ÐÇÍ¼Æ¬'><img class='diapo' src='/photos/20120529123831810.jpg' alt='Ã÷ÐÇÍ¼Æ¬' width='210' ></a><div class='text'><span class='title'>Ã÷ÐÇÍ¼Æ¬</span></div></div><div class='slide'><A href='/Gallery/64/' target='_blank' title='Ã÷ÐÇÍ¼Æ¬'><img class='diapo' src='/photos/20120529123831996.jpg' alt='Ã÷ÐÇÍ¼Æ¬' width='210' ></a><div class='text'><span class='title'>Ã÷ÐÇÍ¼Æ¬</span></div></div><div class='slide'><A href='/Gallery/64/' target='_blank' title='Ã÷ÐÇÍ¼Æ¬'><img class='diapo' src='/photos/20120529123831600.jpg' alt='Ã÷ÐÇÍ¼Æ¬' width='210' ></a><div class='text'><span class='title'>Ã÷ÐÇÍ¼Æ¬</span></div></div><div class='slide'><A href='/Gallery/64/' target='_blank' title='Ã÷ÐÇÍ¼Æ¬'><img class='diapo' src='/photos/20120529123831821.jpg' alt='Ã÷ÐÇÍ¼Æ¬' width='210' ></a><div class='text'><span class='title'>Ã÷ÐÇÍ¼Æ¬</span></div></div>
-	</div>
-<script type="text/javascript">
-/* ==== start script ==== */
-slider.init();
-</script>
-</div>
-<!--slide album end-->
-				</li>
-				<li>
-					<h2>²©¿Í·ÖÀà</h2>
-<ul><li><a href='/Category/Enterntainment/'>ÓéÀÖ×ÊÑ¶</a> (3) <a href='/rss/Feed.asp?CatID=133' target='_blank'><img src='/images/rss_icon.gif'></a></li><li><a href='/Category/Love/'>Çé¸ÐÌìµØ</a> (2) <a href='/rss/Feed.asp?CatID=135' target='_blank'><img src='/images/rss_icon.gif'></a></li><li><a href='/Category/Internet/'>»¥ÁªÍø</a> (6) <a href='/rss/Feed.asp?CatID=136' target='_blank'><img src='/images/rss_icon.gif'></a></li><li><a href='/Category/Favorite/'>¸öÈËÊÕ²Ø</a> (1) <a href='/rss/Feed.asp?CatID=138' target='_blank'><img src='/images/rss_icon.gif'></a></li><li><a href='/Category/Diary/'>¸öÈËÈÕ¼Ç</a> (1) <a href='/rss/Feed.asp?CatID=137' target='_blank'><img src='/images/rss_icon.gif'></a></li></ul>
-				</li>
-				<li>
-					<h2>ÈÈÃÅÎÄÕÂ</h2>
-<ul><li><a href='/html/0651825813.html' target='_blank'>ÈÕ±¾½«¿ª·¢³¬¼¶ÃÔÄã³µ Ö»¹©Ò»µ½Á½ÈË</a> (12)</li><li><a href='/html/2875165721.html' target='_blank'>´«Í³¿ìµÝºôÓõÐÐÒµ½ûÖ¹µçÉÌÉæ×ã¿ìµÝÒµ</a> (4)</li><li><a href='/html/943726544.html' target='_blank'>¹È¸èÆ»¹ûÎ¢ÈíÑÅ»¢Õù¶áÒÆ¶¯ä¯ÀÀÆ÷ÊÐ³¡</a> (2)</li><li><a href='/html/624185537.html' target='_blank'>Åµ»ùÑÇ¼Æ»®ÔÚÎ´À´ÊÖ»úÖÐ¼ÓÈë·ÀË®¹¦ÄÜ</a> (1)</li><li><a href='/html/7026945042.html' target='_blank'>°¢Àï°Í°ÍºÍÖ§¸¶±¦ÔÚ»¦¹ºÂ¥ Â½¼Ò×ì½«</a> (1)</li><li><a href='/html/4670284933.html' target='_blank'>Ç°ÄÐÓÑ²»¶ÏÉ§ÈÅ Ç×ÊÖ½Á¾Ö»ÙÁËÎÒµÄÐÒ</a> (1)</li><li><a href='/html/1387244638.html' target='_blank'>ËÉµº²Ë²Ë×Ó´úÑÔ·ÑÒª¼Û¹ý¸ß ÒÉÔâ¹ã¸æ</a> (1)</li><li><a href='/html/6854304456.html' target='_blank'>ÉÙÅ®Ê±´úÖ£Ðãåû¿ì²ÍµêÈÇÎ§¹Û ÖÂ¸½½ü</a> (1)</li><li><a href='/html/1820354344.html' target='_blank'>ÐÂÔ«ÀïÉ³·¢ÐÐÐ´Õæ¼¯ ³Æ½â³ýÁµ°®½ûÖ¹</a> (1)</li><li><a href='/html/7043195512.html' target='_blank'>ËÉÏÂÐû²¼½«¶Ô×Ü¹«Ë¾7000ÃûÔ±¹¤½ø</a> (0)</li></ul>
-				</li>
-				<li>
-					<h2>ÓÑÇéÁ´½Ó</h2>
-<div class="FriendLink"><a href='http://www.ah8x.com' target='_blank' >Â·ÓÉÆ÷ÍøÖ·</a> <a href='http://diannaodiy.net' target='_blank' >µçÄÔÖªÊ¶´óÈ«</a> <a href='http://www.66diannao.com' target='_blank' >µçÄÔÖªÊ¶Íø</a> <a href='http://weibo.com' target='_blank' >ÐÂÀËÎ¢²©</a> <a href='http://www.sohu.com/' target='_blank' rel='NoFollow'>ËÑºü</a> <a href='http://www.163.com/' target='_blank' >ÍøÒ×</a> <a href='http://www.google.com.hk/' target='_blank' >¹È¸è</a> <a href='http://www.sina.com.cn/' target='_blank' >ÐÂÀË</a> <a href='http://www.baidu.com/' target='_blank' >°Ù¶È</a> </div>
-<div class="clearfix"></div>
-				</li>
-			</ul>
-		</div>
-					<!-- end #sidebar -->
-				</div>
-				<div style="clear: both;">&nbsp;</div>
-			</div>
-		</div>
-	</div>
-	<!-- end #page -->
-</div>
-<div id="footer">
-	<p>Copyright &copy; 2012 º£ÄÉ¸öÈË²©¿ÍÏµÍ³Britar Yao All rights reserved<BR> Powered by ²©¿Í³ÌÐò <img src="/images/hituxblog-logo.png" width="80" alt='HituxBlog V1.4'> <a href="/rss" target="_blank"><img src="/images/rss_icon.gif"></a> <a href="/rss/feed.xml" target="_blank"><img src="/images/xml_icon.gif"></a> Themes By <A href="http://www.66diannao.com/" target=_blank>µçÄÔÖªÊ¶</a>
-</p>
-</div>
-<!-- end #footer -->
+	</main>
 </body>
 </html>
-
-
